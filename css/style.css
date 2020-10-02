@@ -1,0 +1,117 @@
+body{
+  margin: 0;
+}
+
+h1{
+  margin: 0;
+  position: relative;
+  top: 190px;
+  color: #fff;
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: 'Gurmukhi MN',sans-serif;
+}
+
+a{
+  color: #fff;
+  text-decoration-line: underline;
+  position: relative;
+  left: 130px;
+  font-family: 'Gurmukhi MN',sans-serif;
+}
+
+.container{
+  background-image: url(../img/night-sky.jpg);
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+  border: 2px;
+}
+
+.container::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  bottom: -5px;
+  left: -5px;
+  right: -5px;
+  background: inherit;
+  filter: blur(3px);
+  /* position:absoluteのせいで最前面に来てしまうため */
+  z-index: -1;
+}
+
+.login{
+  margin: 0;
+  width: 100%;
+  height: 600px;
+  position: relative;
+  top: 200px;
+  left: 600px;
+}
+
+.login input[type=text]{
+  margin-bottom: 20px;
+  border: 1px solid rgba(255,255,255,0.8);width: 250px;
+  height: 30px;
+  background: transparent;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 4px;
+  font-family: 'Gurmukhi MN',sans-serif;
+}
+
+.login input[type=button]{
+    width: 260px;
+    height: 35px;
+    background: #fff;
+    border: 1px solid #fff;
+    cursor: pointer;
+    border-radius: 2px;
+    color: #a18d6c;
+    font-family: 'Exo', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 6px;
+    margin-top: 10px;
+    font-family: 'Gurmukhi MN',sans-serif;
+}
+
+.login input[type=button]:hover{
+    opacity: 0.8;
+}
+
+.login input[type=button]:active{
+    opacity: 0.6;
+}
+
+.login input[type=text]:focus{
+    outline: none;
+    border: 1px solid rgba(255,255,255,0.9);
+}
+
+::-webkit-input-placeholder{
+   color: rgba(255,255,255,0.8);
+   text-align: center;
+}
+
+::-moz-input-placeholder{
+   color: rgba(255,255,255,0.8);
+   text-align:center;
+}
+
+.icon{
+  position: relative;
+  left: 550px;
+  bottom: 395px;
+}
+
+.icon img{
+  margin-bottom: 25px;
+}
+
+.box{
+  border: solid 3px #fff;
+}
